@@ -25,7 +25,7 @@ describe('SpamFilter', () => {
                 ['bit.ly'],
                 ['goo.gl'],
                 ['tvtv24.com'],
-                // ['www.filekok.com'] // N/A
+                ['www.filekok.com']
             ];
 
             const testCases = [

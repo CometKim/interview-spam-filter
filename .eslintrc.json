@@ -5,6 +5,7 @@
         "plugin:flowtype/recommended"
     ],
     "globals": {
+        "console": true,
         "Promise": true,
         "jest": true,
         "describe": true,
@@ -15,5 +16,8 @@
         "beforeAll": true,
         "afterEach": true,
         "afterAll": true
+    },
+    "rules": {
+        "no-console": "off"
     }
 }
