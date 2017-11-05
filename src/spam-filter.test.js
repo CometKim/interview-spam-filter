@@ -29,7 +29,7 @@ describe('SpamFilter', () => {
             ];
 
             const testCases = [
-                // isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 1), // N/A
+                isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 1),
                 isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[1], 1),
                 isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[2], 2),
                 // isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 2), // N/A
@@ -38,9 +38,9 @@ describe('SpamFilter', () => {
 
             const results = await Promise.all(testCases);
 
-            expect(results[0]).toEqual(true);
+            expect(results[0]).toEqual(false);
             expect(results[1]).toEqual(true);
-            // expect(results[2]).toEqual(true);
+            expect(results[2]).toEqual(true);
             // expect(results[3]).toEqual(false);
             // expect(results[4]).toEqual(true);
         });
