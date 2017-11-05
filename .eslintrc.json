@@ -5,6 +5,7 @@
         "plugin:flowtype/recommended"
     ],
     "globals": {
+        "Promise": true,
         "jest": true,
         "describe": true,
         "it": true,
