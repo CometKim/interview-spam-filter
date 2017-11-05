@@ -16,5 +16,8 @@
   },
   "scripts": {
     "test": "jest src/**/*.test.js"
+  },
+  "dependencies": {
+    "xregexp": "^3.2.0"
   }
 }
