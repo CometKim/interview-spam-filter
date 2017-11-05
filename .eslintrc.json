@@ -1,0 +1,18 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "globals": {
+        "jest": true,
+        "describe": true,
+        "it": true,
+        "test": true,
+        "expect": true,
+        "beforeEach": true,
+        "beforeAll": true,
+        "afterEach": true,
+        "afterAll": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "interview-spam-filter",
+  "version": "0.0.1",
+  "repository": "https://CometKim@github.com/CometKim/interview-spam-filter.git",
+  "author": "Hyeseong Kim <cometkim.kr@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.10.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "flow-bin": "^0.58.0",
+    "jest": "^21.2.1"
+  }
+}
