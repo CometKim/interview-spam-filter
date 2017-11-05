@@ -32,8 +32,8 @@ describe('SpamFilter', () => {
                 isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 1),
                 isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[1], 1),
                 isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[2], 2),
-                // isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 2), // N/A
-                // isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 3), // N/A
+                isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 2), // N/A
+                isSpam('spam spam http://bit.ly/2yTkW52', spamDomains[3], 3), // N/A
             ];
 
             const results = await Promise.all(testCases);
@@ -41,7 +41,7 @@ describe('SpamFilter', () => {
             expect(results[0]).toEqual(false);
             expect(results[1]).toEqual(true);
             expect(results[2]).toEqual(true);
-            // expect(results[3]).toEqual(false);
+            expect(results[3]).toEqual(false);
             // expect(results[4]).toEqual(true);
         });
     });
